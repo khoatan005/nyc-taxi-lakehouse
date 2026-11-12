@@ -1,0 +1,17 @@
+[project]
+name = "nyc-taxi-lakehouse"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "databricks-sdk",
+    "dbt-databricks",
+    "pyarrow",
+    "requests",
+    "python-dotenv",
+]
+
+[dependency-groups]
+dev = ["ruff", "sqlfluff", "sqlfluff-templater-dbt"]
+
+[tool.ruff]
+line-length = 100
